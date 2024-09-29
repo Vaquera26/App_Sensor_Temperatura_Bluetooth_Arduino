@@ -44,10 +44,10 @@ Este proyecto utiliza un sensor DHT11 para medir la temperatura y transmitir los
 
 ## Capturas de Pantalla
 
-![Pantalla con temperatura 11°C](path/to/screenshot1.png)
-![Pantalla con temperatura 28°C](path/to/screenshot2.png)
-![Pantalla con temperatura 40°C](path/to/screenshot3.png)
-![Pantalla con temperatura 50°C](path/to/screenshot4.png)
+![Pantalla con temperatura 11°C](PuertoSerie-Arduino2/Temperatura_11.jpg)
+![Pantalla con temperatura 28°C](PuertoSerie-Arduino2/Temperatura_28.jpg)
+![Pantalla con temperatura 40°C](PuertoSerie-Arduino2/Temperatura_40.jpg)
+![Pantalla con temperatura 50°C](PuertoSerie-Arduino2/Temperatura_50.jpg)
 
 ## Uso de la Interfaz Gráfica
 
