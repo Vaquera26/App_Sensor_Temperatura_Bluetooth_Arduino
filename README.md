@@ -30,6 +30,8 @@ Este proyecto utiliza un sensor DHT11 para medir la temperatura y transmitir los
 - **RX** -> Pin Digital 10 en el Arduino
 - **TX** -> Pin Digital 11 en el Arduino
 
+ ![Circuito](PuertoSerie-Arduino2/Temperatura_11.jpg)
+
 ## Funcionamiento
 
 1. Conecta el hardware de acuerdo a las instrucciones de conexiones.
