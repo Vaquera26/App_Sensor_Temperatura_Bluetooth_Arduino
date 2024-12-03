@@ -1,65 +1,80 @@
-# Proyecto de Sensor de Temperatura con Bluetooth y DHT11
+# 🌡️ **Temperature Sensor with Bluetooth and DHT11** 🌡️
 
-Este proyecto utiliza un sensor DHT11 para medir la temperatura y transmitir los datos a través de Bluetooth utilizando un módulo de comunicación **HC-05**. Los datos también se muestran en una interfaz gráfica creada con **Windows Forms** usando **Visual Studio Community**. El termómetro gráfico cambia de color y estado de acuerdo con la temperatura recibida.
+This project uses a **DHT11** sensor to measure the temperature and transmits the data via Bluetooth using the **HC-05** communication module. The data is also displayed in a graphical interface created with **Windows Forms** in **Visual Studio Community**. The thermometer graphic changes color and state based on the received temperature. 💻
 
-## Características
+## Features 🚀
 
-- **Lectura de temperatura** usando un sensor **DHT11**.
-- **Visualización en pantalla** con etiquetas que muestran la temperatura y el estado (Frío, Templado, Caliente).
-- **Transmisión de datos** a través de **Bluetooth** usando un módulo HC-05.
-- **Interfaz gráfica creada con Windows Forms en Visual Studio Community**.
+- **Temperature reading** using a **DHT11** sensor. 🌡️
+- **On-screen display** with labels showing the temperature and state (Cold, Warm, Hot). 🖥️
+- **Data transmission** via **Bluetooth** using the HC-05 module. 🔗
+- **Graphical interface created with Windows Forms in Visual Studio Community**. 🎨
+
+## Components ⚙️
+
+- **Arduino Uno** 💡
+- **DHT11 Sensor** (for measuring temperature) 🌡️
+- **HC-05 Bluetooth Module** (for wireless communication) 📶
+- **Connection cables** 🔌
+- **Graphical interface created with Windows Forms using Visual Studio Community** 🖥️
+
+### DHT11 Sensor:
+
+- **VCC** -> 5V on Arduino 💡
+- **GND** -> GND on Arduino ⚡
+- **DATA** -> Digital Pin 3 on Arduino 🔌
+
+### Bluetooth Module (HC-05):
+
+- **VCC** -> 5V on Arduino 🔋
+- **GND** -> GND on Arduino ⚡
+- **RX** -> Digital Pin 10 on Arduino 📡
+- **TX** -> Digital Pin 11 on Arduino 📡
+
+![Circuit](Arduino_Bluetooth_Sensor_Temperatura_DHT11/Circuito.jpg)
+
+## How It Works 🛠️
+
+1. Connect the hardware according to the wiring instructions. 🛠️
+2. Upload the Arduino code to start reading temperatures and transmitting the data via Bluetooth. 📲
+3. Run the Windows Forms application in **Visual Studio Community** to visualize the temperature in the graphical interface. 💻
+4. The temperature data will be displayed in the graphical interface along with a visual representation of the thermometer and its corresponding state: 🌈
+   - **Cold** (blue): 0 - 10 °C ❄️
+   - **Cool** (green): 11 - 20 °C 🌱
+   - **Warm** (yellow): 21 - 30 °C 🌞
+   - **Hot** (orange): 31 - 45 °C 🔥
+   - **Very Hot** (red): above 46 °C 🔥
+
+## Screenshots 📸
+
+![Screen with 11°C](PuertoSerie-Arduino2/Temperatura_11.jpg)
+![Screen with 28°C](PuertoSerie-Arduino2/Temperatura_28.jpg)
+![Screen with 40°C](PuertoSerie-Arduino2/Temperatura_40.jpg)
+![Screen with 50°C](PuertoSerie-Arduino2/Temperatura_50.jpg)
+
+## Using the Graphical Interface 🎮
+
+- The **Input ComboBox** and **Output ComboBox** allow you to select the connection ports for serial communication. 🔌
+- The **Connect** button initiates the communication between the temperature sensor and the graphical interface. 🔗
+- The **Refresh** button updates the list of available ports. 🔄
+- The thermometer panel and the **Temperature** and **State** labels automatically update as data arrives. 🔄
+
+## Tools Used 🧰
+
+- **Visual Studio Community**: Integrated development environment (IDE) for creating the graphical interface with **Windows Forms**. 🖥️
+- **Arduino IDE**: To upload the code to the Arduino and control the DHT11 sensor and Bluetooth module. 🔧
+
+---
+
+## About 🤖
+<div align="center">
+  <img src="https://firebasestorage.googleapis.com/v0/b/vaquera-github.firebasestorage.app/o/Juan-Fernando-Vaquera-Sanchez-Images%2FJuan%20Fernando%20Vaquera.PNG?alt=media&token=35ba9787-1dd1-41ac-a253-d7eacb022247" width="150" style="border-radius:50%;">
+
+  ### 👋 Hi, I'm **Juan Fernando Vaquera Sánchez**  
+
+  📫 **Email:** [juan.tec@outlook.com](mailto:juan.tec@outlook.com)  
+  🌐 **Website:** [codexvaquera.studio](https://www.codexvaquera.studio/)  
+  💼 **LinkedIn:** [linkedin.com/in/juan-vaquera-ln](https://www.linkedin.com/in/juan-vaquera-ln/)  
+  🐙 **GitHub:** [github.com/Vaquera26](https://github.com/Vaquera26)  
   
-## Componentes
+</div>
 
-- **Arduino Uno** 
-- **Sensor DHT11** (para medir la temperatura)
-- **Módulo Bluetooth HC-05** (para la comunicación inalámbrica)
-- **Cables de conexión**
-- **Interfaz gráfica creada con Windows Forms usando Visual Studio Community**
-
-### Sensor DHT11:
-
-- **VCC** -> 5V en el Arduino
-- **GND** -> GND en el Arduino
-- **DATA** -> Pin Digital 3 en el Arduino
-
-### Módulo Bluetooth (HC-05):
-
-- **VCC** -> 5V en el Arduino
-- **GND** -> GND en el Arduino
-- **RX** -> Pin Digital 10 en el Arduino
-- **TX** -> Pin Digital 11 en el Arduino
-
- ![Circuito](Arduino_Bluetooth_Sensor_Temperatura_DHT11/Circuito.jpg)
-
-## Funcionamiento
-
-1. Conecta el hardware de acuerdo a las instrucciones de conexiones.
-2. Carga el código de Arduino para comenzar a leer las temperaturas y transmitir los datos a través de Bluetooth.
-3. Ejecuta la aplicación de Windows Forms en **Visual Studio Community** para visualizar la temperatura en la interfaz gráfica.
-4. Los datos de temperatura se mostrarán en la interfaz gráfica, junto con una representación visual del termómetro y su estado correspondiente:
-   - **Frío** (azul): 0 - 10 °C
-   - **Templado Bajo** (verde): 11 - 20 °C
-   - **Templado Alto** (amarillo): 21 - 30 °C
-   - **Caliente Moderado** (naranja): 31 - 45 °C
-   - **Muy Caliente** (rojo): mas 46 °C
-
-## Capturas de Pantalla
-
-![Pantalla con temperatura 11°C](PuertoSerie-Arduino2/Temperatura_11.jpg)
-![Pantalla con temperatura 28°C](PuertoSerie-Arduino2/Temperatura_28.jpg)
-![Pantalla con temperatura 40°C](PuertoSerie-Arduino2/Temperatura_40.jpg)
-![Pantalla con temperatura 50°C](PuertoSerie-Arduino2/Temperatura_50.jpg)
-
-## Uso de la Interfaz Gráfica
-
-- El **ComboBox de Entrada** y **ComboBox de Salida** permiten seleccionar los puertos de conexión para la comunicación serie.
-- El botón **Conectar** inicia la comunicación entre el sensor de temperatura y la interfaz gráfica.
-- El botón **Actualizar** refresca la lista de puertos disponibles.
-- El panel del termómetro y las etiquetas de **Temperatura** y **Estado** se actualizan automáticamente conforme llegan los datos.
-
-## Herramientas Utilizadas
-
-- **Visual Studio Community**: Entorno de desarrollo integrado (IDE) para crear la interfaz gráfica con **Windows Forms**.
-- **Arduino IDE**: Para cargar el código al Arduino y controlar el sensor DHT11 y el módulo Bluetooth.
-  
